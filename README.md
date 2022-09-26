@@ -55,57 +55,39 @@ Consideramos importante que los datos se adecuaran a los requerimientos en cuant
 Nuestro dataset contiene el abandono de los clientes de las tarjetas de credito segun distintas variables.
 
 ### Variables
-CLIENTNUM = Client number. Unique identifier for the customer holding the account
 
-Attrition_Flag = Internal event (customer activity) variable - if the account is closed then 1 else 0
+Variables | Descripcion
+--------- | -----------
+CLIENTNUM | Client number. Unique identifier for the customer holding the account
+Attrition_Flag | Internal event (customer activity) variable - if the account is closed then 1 else 0
+Customer_Age | Demographic variable - Customer's Age in Years
+Gender | Demographic variable - M=Male, F=Female
+Dependent_count | Demographic variable - Number of dependents
+Education_Level | Demographic variable - Educational Qualification of the account holder (example: high school, college graduate, etc.)
+Marital_Status | Demographic variable - Married, Single, Divorced, Unknown
+Income_Category | Demographic variable - Annual Income Category of the account holder (<  40K, 40K - 60K,  60K− 80K,  80K− 120K, $120K >)
+Card_Category | Product Variable - Type of Card (Blue, Silver, Gold, Platinum)
+Months_on_book | Period of relationship with bank
+Total_Relationship_Count | Total no. of products held by the customer
+Months_Inactive_12_mon | No. of months inactive in the last 12 months
+Contacts_Count_12_mon | No. of Contacts in the last 12 months
+Credit_Limit | Credit Limit on the Credit Card
+Total_Revolving_Bal | Total Revolving Balance on the Credit Card
+Avg_Open_To_Buy | Open to Buy Credit Line (Average of last 12 months)
+Total_Amt_Chng_Q4_Q1 | Change in Transaction Amount (Q4 over Q1)
+Total_Trans_Amt | Total Transaction Amount (Last 12 months)
+Total_Trans_Ct | Total Transaction Count (Last 12 months)
+Total_Ct_Chng_Q4_Q1 | Change in Transaction Count (Q4 over Q1)
+Avg_Utilization_Ratio | Average Card Utilization Ratio
 
-Customer_Age = Demographic variable - Customer's Age in Years
-
-Gender = Demographic variable - M=Male, F=Female
-
-Dependent_count = Demographic variable - Number of dependents
-
-Education_Level = Demographic variable - Educational Qualification of the account holder (example: high school, college graduate, etc.)
-
-Marital_Status = Demographic variable - Married, Single, Divorced, Unknown
-
-Income_Category = Demographic variable - Annual Income Category of the account holder (<  40K, 40K - 60K,  60K− 80K,  80K− 120K, $120K >)
-
-Card_Category = Product Variable - Type of Card (Blue, Silver, Gold, Platinum)
-
-Months_on_book = Period of relationship with bank
-
-Total_Relationship_Count = Total no. of products held by the customer
-
-Months_Inactive_12_mon = No. of months inactive in the last 12 months
-
-Contacts_Count_12_mon = No. of Contacts in the last 12 months
-
-Credit_Limit = Credit Limit on the Credit Card
-
-Total_Revolving_Bal = Total Revolving Balance on the Credit Card
-
-Avg_Open_To_Buy = Open to Buy Credit Line (Average of last 12 months)
-
-Total_Amt_Chng_Q4_Q1 = Change in Transaction Amount (Q4 over Q1)
-
-Total_Trans_Amt = Total Transaction Amount (Last 12 months)
-
-Total_Trans_Ct = Total Transaction Count (Last 12 months)
-
-Total_Ct_Chng_Q4_Q1 = Change in Transaction Count (Q4 over Q1)
-
-Avg_Utilization_Ratio = Average Card Utilization Ratio
-
-#¿Qué es un saldo renovable(Revolving Balance)?
-
+### ¿Qué es un saldo renovable(Revolving Balance)?
 Si no pagamos el saldo de la cuenta de crédito renovable en su totalidad cada mes, la parte no pagada se traslada al mes siguiente. A eso se le llama saldo renovable
 
-¿Qué es el saldo medio abierto para comprar( Average Open to buy)?
+### ¿Qué es el saldo medio abierto para comprar( Average Open to buy)?
 
 El "Open to Buy" significa la cantidad que le queda a su tarjeta de crédito por utilizar. Esta columna representa la media de este valor en los últimos 12 meses.
 
-¿Qué es el Ratio de utilización media (Average utilization Ratio)?
+### ¿Qué es el Ratio de utilización media (Average utilization Ratio)?
 
 El Avg_Utilization_Ratio representa cuánto del crédito disponible gastó el cliente. Esto es útil para calcular la puntuación de crédito.
 
@@ -113,16 +95,6 @@ Relación entre Avg_Open_To_Buy, Credit_Limit y Avg_Utilization_Ratio:
 
 ( Avg_Open_To_Buy / Credit_Limit ) + Avg_Utilization_Ratio = 1
 
-
-### Empresa
-
-### Fuente de información
-
-
-### Objetivo
-
-
-### Hipótesis
 
 
 
